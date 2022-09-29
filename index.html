@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Projeto HTML</title>
+</head>
+<body>
+    <h1>Introdução ao HTML na Prática</h1>
+    <h2 id="inicio">Índice</h2>
+    <ul>
+        <li><a href="#inspetor">Inspetor de Elementos</a></li>
+        <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+        <li><a href="#tags">Falando Sobre Tags</a></li>
+        <li><a href="#atributos">Atributos das Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ul>
+
+    <h3 id="inspetor">Inspetor de Elementos</h3>
+    <p>
+        A ferramenta de inspecionar elemento é um utilitário que permite visualizar o código-fonte subjacente de qualquer página web. Além disso, você pode usá-la para fazer alterações temporárias e ver os resultados em tempo real, deixando o código-fonte original intacto. 
+    </p>
+    <p>
+        Isso é extremamente útil se você precisa testar uma alteração ou diagnosticar um problema. Também pode ser de grande valia se você encontrar um site com um recurso de que goste e estiver curioso para saber como ele foi implementado.
+    </p>
+    
+    <h3 id="estrutura">Estrutura Básica do HTML</h3>
+    <p>
+        O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Visual Studio Code já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. 
+    </p>
+    <p>
+        É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+    </p>
+    <h4>Doctype - Definindo o documento</h4>
+    <p>
+        Uma coisa importante: SEMPRE deve existir o doctype, que é este código <!DOCTYPE html>. O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a PRIMEIRA LINHA do seu documento.
+    </p>
+    <h4>HEAD</h4>
+    <p>
+        Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.
+    </p>
+    <h4>BODY</h4>
+    <p>
+        Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags <body> e </body>.
+    </p>
+     <p>
+        Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.
+    </p>
+    <p>  
+    Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.
+     </p>
+
+    <h3 id="tags">Falando Sobre Tags</h3>
+    <p>
+     As Tags servem para categorizar conteúdos. Sem esquecer de mencionar, a tradução da palavra para o português, Tag significa etiqueta. As tags servem para trazer as especificações de um produto.
+    </p>
+
+    <h3 id="atributos">Atributos das Tags</h3>
+    <p>
+    Atributos HTML são palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento. Os atributos HTML são um modificador de um tipo de elemento.
+    </p>
+
+    <h3 id="textos">Textos</h3>
+    <p>
+     As principais tags para inserir um texto são:
+    </p>
+    <ul></ul>
+    <li>(h1...hx) São utilizadas para inserir titulos, subtitulos e assim por diante</li>
+    <li>(P) Para definir um paragráfo</li>
+    <li>(I) Para definir o texto em itálico</li>
+    <li>(U) Para sublinhar o texto</li>
+    <li>(strong) Para deixar o texto em negrito</li>
+    </ul>  
+
+    <h3 id="listas">Listas Ordenadas e Não Ordenadas</h3>
+    <p>
+     A principal diferença entre a lista ordenada e a lista não-ordenada está na maneira com que os itens de cada lista são apresentados - a lista ordenada enumera os elementos; a lista não-ordenada coloca marcadores antes de cada elemento.
+    </p>
+
+    <h3 id="links">Links</h3>
+    <p>
+     A HTML usa a tag <a> (âncora) para criar um vínculo (link) com outro documento. Uma âncora pode apontar para qualquer recurso na Web: uma página em HTML, uma imagem, um arquivo de som, um filme, etc.
+    </p>
+    
+    <a href="#inicio">Voltar</a>
+
+    
+</body>
+</html>
